@@ -26,3 +26,4 @@ int main(void){
 	bin(num);
 	return 0;
 }
+//teste
