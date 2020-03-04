@@ -4,10 +4,13 @@ print("|                                                |")
 print("|          Ordenando valores aleatórios          |")
 print("|________________________________________________|")
 N = input("\nDigite a quantidade de elementos para ordenar: ")
-while not N.isnumeric():
+while not N.isnumeric() or int(N)<10:
     print(" _____________________________________________")
     print("|                                             |")
-    print(f"|   ✘ Valor precisa ser um número inteiro! ✘  |")
+    if not N.isnumeric():
+        print(f"|   ✘ Valor precisa ser um número inteiro! ✘  |")
+    elif int(N)<10:
+        print(f"|     ✘ Valor mínimo de 10 elementos     ✘   |")
     print("|_____________________________________________|")
 
     N = input("\nDigite a quantidade de elementos para ordenar: ")
