@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+}
+#logo{
+	border-radius: 50%;
+	padding: 5px;
+	width: 120px;
+	float: left;
+}
+#head{
+	background-color:#891A1A;
+	<!--height:100px;-->
+}
+.texthead{
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 14px bold;
+	font-weight: bold;
+	color: #F7D4D4;
+}
+.topmenu {
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+    background-color: #5f5f5f;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+a {
+    background-color: transparent;
+}
+a a:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.item_menu a:hover,.topnav .w3-bar a:focus{
+background-color:#000000 !important;
+color:#ffffff !important;
+}
+.item_menu {
+    padding: 4px 20px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+	color: #f1f1f1;
+    outline: 0;//	
+	height: 20px;
+	text-transform: uppercase;
+	
+</style>
+</head>
+<body>
+<div id="head">
+<img id="logo" src="Img/fatec.png"></img> 
+<p class="texthead">Faculdade de Tecnologia de São Paulo<br>Trabalho de Web<br>Grupo X</p>
+</div>
+<div class=" topmenu" id="topmenu" style="position: relative; top: 0px;">
+  <div style="overflow:auto;">
+    <div class="item_menu">
+      <a href="/default.asp" class="item_menu" title="Home">início</a>
+	  <a href="/default.asp" class="item_menu" title="Home">quem somos</a>
+	  <a href="/default.asp" class="item_menu" title="Home">integrantes</a>
+	  <a href="/default.asp" class="item_menu" title="Home">contato</a>
+    </div>
+ 
+    </div>
+  </div>
+
+</body>
+</html>
