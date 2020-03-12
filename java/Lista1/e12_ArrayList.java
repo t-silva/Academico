@@ -17,10 +17,10 @@ class e12_ArrayList{
 		}
 		System.out.println("Vetor: " +R);
 		int x;
-		while(1==1){
-			System.out.print("\nDigite um valor para eliminar: ");
+		while(R.size()>0){
+         System.out.println("Quantidade de elementos: "+R.size());
+			System.out.print("\nDigite um valor para eliminar: ");  
 			x = ler.nextInt();
-			Boolean resp = R.contains(x);
 			while (R.contains(x)) R.remove(Integer.valueOf(x));
 			System.out.println("Vetor: " +R);
 		}
