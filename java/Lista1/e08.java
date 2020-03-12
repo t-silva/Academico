@@ -16,6 +16,7 @@ public static void main(String args[]){
 	System.out.println("Intervalo: ["+menor+","+maior+"]");
 	do{
 		x= ler.nextInt();
+		//if (x>=menor && x<=maior && x!=0){ //aqui não contaria o 0 se estivesse no intervalo
 		if (x>=menor && x<=maior && x!=0){
 			tot+=x;
 			n++;
