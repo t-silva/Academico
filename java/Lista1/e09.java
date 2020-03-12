@@ -29,3 +29,6 @@ class e09{
 		System.out.println("Elementos contabilizados = "+lista.size());
 	}
 }
+/*O problema desse exercício é o tamanho do vetor. Usando vetores, eu posso estourar o limite e, em java
+ não é possível realocar mais memória para o vetor, sendo necessário utilizar outro vetor e jogar o conteúdo do 
+primeiro fora.*/
