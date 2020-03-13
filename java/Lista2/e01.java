@@ -1,13 +1,13 @@
 import java.util.Scanner;
 public class e01{
-	static int Min;
+	static int Min; //Duvidas sobre essa relacao de variaveis estaticas com metodos estaticos
 	static int Max;
-	public static void main(String[] args){
+	public static void main(String[] args){ //Aparentemente o main precisa ser estatico, aí os demais métodos precisam também.
 		min();
 		max();
 		prim(Min,Max);
 	}
-	public static void min(){
+	public static void min(){ //se removo o 'static', o método min não pode ser refenciado do main (static)
 		Scanner ler = new Scanner(System.in);
 		System.out.print("Digite o valor minimo: ");
 		do{
