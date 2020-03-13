@@ -41,3 +41,5 @@
 19. Faça um programa que permaneça em laço até que seja digitado um valor menor ou igual a zero. Cada valor válido (positivo) digitado deve ser inserido em uma lista na posição imediatamente antes do primeiro elemento que seja maior que valor que está sendo inserido. Isso resultará em uma lista ordenada de forma crescente. Será necessário usar o método insert da lista – pesquise sobre ele.
 
 20. Faça um programa que leia um número inteiro N obrigatoriamente maior que 10. Preencha uma lista de tamanho N com números inteiros aleatórios. Exiba na tela a lista gerada e em seguida coloque-a em ordem crescente usando o método da bolha. Não é permitido usar o método sort da lista
+
+teste
