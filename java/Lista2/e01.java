@@ -21,7 +21,7 @@ public class e01{
 		do{
 		Max = ler.nextInt();
 		if (Max < Min) System.out.println("Valor maximo menor que o minimo:\nMax("+Max+") < Min("+Min+")");
-		}while(Max < Min && Max > 99999);
+		}while(Max < Min || Max > 99999);
 	}
 	public static void prim(int Min, int Max){
 		for (int i= Min; i<=Max;i++){
