@@ -13,7 +13,7 @@ aos desenvolvidos na questão 1 para fazer a leitura dos limites Min e Max.
 dígitos gerado. A regra de cálculo desse dígito verificador tem o nome de módulo 7 e é descrita a seguir.
 Exemplo: se o código for 21468, o dígito verificador será 3.
 
-Ex. Em primeiro lugar deve-se tomar cada dígito individualmente e multiplicá-lo pelo peso apropriado. O peso
+4. Em primeiro lugar deve-se tomar cada dígito individualmente e multiplicá-lo pelo peso apropriado. O peso
 do dígito menos significativo é 6, o peso do segundo dígito menos significativo é 5 e assim por diante,
 conforme mostrado na tabela. Os resultados das multiplicações devem ser somados e por fim calcula-se o
 resto dessa soma por 7.</p>
