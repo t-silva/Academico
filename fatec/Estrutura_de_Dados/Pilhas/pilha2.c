@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 typedef char obj;
-#define max 300
+#define max 5
 typedef struct{ //cria um struct com dois campos, TOPO (controla pilha) e s[max] vetor da pilha.
 	int topo; 
 	obj s[max];
@@ -16,35 +16,15 @@ obj pop( Pilha *p);
 obj top ( Pilha *p);
 int main(void){
 	Pilha p1;
-	Pilha *p=&p1; 
-	int n,b,q,r;
+	Pilha *p=&p1; //p passa a ser um ponteiro que apontará o endereço da pillha p1
+	char letra;
 	init(p);
+	printf("Vamos testar pilha\n");
 	do{
-		printf("Entre com um valor inteiro em DECIMAL para converter \n n >= 1: ");
-		scanf("%d",&n);
-	}while(n<=0); //Número inteiro Positivo
-	do{
-		printf("Entre com a base \n 2 <= B <=36: ");
-		scanf("%d",&b);
-	}while(b<2 && b > 36); //entre 2 e 36
-	printf("%d na base %d = [ ",n,b);
-	do{
-		push(n%b,p);
-		n/=b;
-	} while ( n ); // Coloca resto da divisão pela base na pilha enquanto n/b != 0
-	
-	while(!isempty(p)) { //enquanto pilha não acabar
-		r = pop(p); // Atribui r ao primeiro elemento da pilha
-		if ( r < 10 ) printf("%d",r); // se for possível imprimir valor numérico
-		else printf("%c",r+55); // senão for, soma valor com 55 que cai na letra da tabela ASCII (Ex. 10 + 55 = 65, que vale A, em caracter)
-		if ((p->topo+1)%4==0) printf(" "); //Para colocar um espaço a cada 4 elementos 
-	}
-	while(!isempty(p)){
-		if(p->topo%4==0) printf("%d ",pop(p)); // separar 4 em 4 dígitos (melhora da visualização em binário)
-		else printf("%d",pop(p)); 
-	}
-	
-	puts("]");
+		letra = getchar();fflush(stdin);
+		if(letra!='.')push(letra,p);
+	} while(letra!='.'); //adiciona até digitar '.'
+	while(!isempty(p)) printf("%c\n",pop(p)); //remove o ultimo item, exibindo ele na tela
 	return 0;								  //observar que a exibição será invertida.
 }
 void init(Pilha *p){
